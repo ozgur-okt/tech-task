@@ -1,0 +1,51 @@
+.topBarContainer {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: 6rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+  .logo {
+    border: 1px solid blue;
+
+    img {
+      height: 3rem;
+      cursor: pointer;
+    }
+  }
+
+  .navbar {
+    margin: auto;
+    border: 1px solid blue;
+    .navBtn {
+      padding: 0.5rem 1rem;
+      border: none;
+      background-color: transparent;
+      color: purple;
+      font-size: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      margin-right: 1rem;
+
+      &:hover {
+        color: #5d2ae5;
+      }
+    }
+
+    .contactBtn {
+      border: none;
+      background-color: transparent;
+      color: red;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      font-size: 1rem;
+      font-weight: 800;
+      height: 3rem;
+      width: 10rem;
+
+      &:hover {
+        color: #5d2ae5;
+      }
+    }
+  }
+}

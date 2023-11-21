@@ -1,0 +1,42 @@
+.aboutContainer {
+  display: flex;
+  height: 70vh;
+  width: 70vw;
+  margin: auto;
+  border: 1px solid blue;
+
+  .image {
+    width: 50%;
+    height: 100%;
+  }
+
+  h5 {
+    font-weight: 700;
+    color: red
+  }
+
+  .carousel {
+    border: 1px solid blue;
+    max-width: 500px;
+    min-height: 300px;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 4rem;
+      font-weight: 700;
+      color: purple;
+    }
+    
+    p{
+      font-size: 0.9rem;
+      font-weight: 500;
+      line-height: 1.5rem;
+      color: gray;
+    }
+  }
+
+  
+}
+
+/* About.module.scss */
+

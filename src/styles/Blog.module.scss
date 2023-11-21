@@ -1,0 +1,30 @@
+.blogContainer {
+  height: 70vh;
+  width: 70vw;
+  margin: auto;
+  border: 1px solid blue;
+
+  h5 {
+    color: red;
+  }
+
+  h1 {
+    color: purple;
+  }
+
+  .carousel {
+    width: 100%;
+
+    .card {
+      height: 20rem;
+      //margin: 0 ;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      border: 1px solid blue;
+
+      &:hover {
+        color: white;
+        background-color: red;
+      }
+    }
+  }
+}

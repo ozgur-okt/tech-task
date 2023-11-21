@@ -6,9 +6,9 @@ function Home() {
   return (
     <div className={styles.homeContainer}>
       <div className={styles.textContainer}>
-        <h3>{home.title}</h3>
+        <h1>{home.title}</h1>
         <p>{home.subtitle}</p>
-        <div className={styles.buttonLinkContainer}>
+        <div>
           <button>{home.buttonText}</button>
           <a href={home.link.url}>{home.link}</a>
         </div>

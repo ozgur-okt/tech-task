@@ -3,28 +3,33 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { portfolio } from '../data/portfolio';
+import styles from '../styles/Portfolio.module.scss';
 
 function Portfolio() {
   const settings = {
-    dots: true,
+    className: "center",
+    centerMode: true,
     infinite: true,
-    speed: 500,
+    centerPadding: "0px",
     slidesToShow: 1,
-    slidesToScroll: 1,
+    speed: 500,
+    rows: 2,
+    slidesPerRow: 3
   };
 
   return (
-    <div>
-      <h1>{portfolio.section}</h1>
+    <div className={styles.portfolioContainer}>
+      <h1>{portfolio.title}</h1>
       <Slider {...settings}>
-        {portfolio.carousel.map((item, index) => (
-          <div key={index}>
-            <img src={item.image} alt={item.title} />
-            <h3>{item.title}</h3>
+        {portfolio.cards.map((card, index) => (
+          <div className={styles.card}>
+            <img src={card.image} alt={card.title} />
           </div>
         ))}
       </Slider>
-      <p>{portfolio.link}</p>
+      <div className={styles.link}>
+        <a>{portfolio.link}</a>
+      </div>
     </div>
   );
 }

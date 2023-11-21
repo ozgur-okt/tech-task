@@ -1,0 +1,27 @@
+.portfolioContainer {
+  height: 80vh;
+  width: 70vw;
+  margin: auto;
+  border: 1px solid blue;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: purple;
+  }
+  .card {
+    //margin: 0px;
+    margin-bottom: 2rem;
+  }
+  .link {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    a {
+      font-size: 1rem;
+      font-weight: 800;
+      color: red;
+    }
+  }
+  
+}

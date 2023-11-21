@@ -1,0 +1,51 @@
+.servicesContainer{
+  display: flex;
+  height: 70vh;
+  width: 70vw;
+  margin: auto;
+  border: 1px solid blue;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: purple
+  }
+
+  button {
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 25px;
+    background-color: purple;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-right: 1rem;
+
+    &:hover {
+      background-color: #5d2ae5;
+    }
+  }
+
+  .card {
+    padding: 2rem;
+    margin: 0 1rem;
+    width: 60%;
+    //border: 1px solid red;
+    height: 20rem;
+    color: purple;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 2rem 0;
+    }
+
+    p {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+}

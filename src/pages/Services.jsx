@@ -1,20 +1,21 @@
 import React from 'react'
 import { services } from '../data/services'
-import CardServices from '../components/CardServices'
+import styles from '../styles/Services.module.scss'
 
 function Services() {
   return (
-    <div>
-      <h1>{services.title}</h1>
-      <button>{services.buttonText}</button>
+    <div className={styles.servicesContainer}>
+      <div>
+        <h1>{services.title}</h1>
+        <button>{services.buttonText}</button>
+      </div>
       {
         services.cards.map((card, index) => (
-          <CardServices
-            key={index}
-            icon={card.icon}
-            alt={card.alt}
-            title={card.title}
-            description={card.description} />
+          <div className={styles.card} key={index}>
+            <img src={card.icon} alt={card.alt} />
+            <h3>{card.title}</h3>
+            <p>{card.description}</p>
+          </div>
         ))
       }
     </div>

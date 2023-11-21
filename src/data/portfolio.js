@@ -1,18 +1,61 @@
 export const portfolio = {
     section: "PORTFOLIO",
-    carousel: [
+    title: "See some of our Creative work.",
+    cards: [
         {
-            title: "See some of our Creative work.",
-            image: "https://picsum.photos/200/300"
+            image: "https://picsum.photos/300/200"
         },
         {
-            title: "See some of our Creative work.",
-            image: "https://picsum.photos/200/300"
+            image: "https://picsum.photos/300/200"
         }, 
         {
-            title: "See some of our Creative work.",
-            image: "https://picsum.photos/200/300"
+            image: "https://picsum.photos/300/200"
         },
+        {
+            image: "https://picsum.photos/300/200"
+        },
+        {
+            image: "https://picsum.photos/300/200"
+        }, 
+        {
+            image: "https://picsum.photos/300/200"
+        },
+        {
+            image: "https://picsum.photos/300/200"
+        },
+        {
+            image: "https://picsum.photos/300/200"
+        }, 
+        {
+            image: "https://picsum.photos/300/200"
+        },
+        {
+            image: "https://picsum.photos/300/200"
+        },
+        {
+            image: "https://picsum.photos/300/200"
+        }, 
+        {
+            image: "https://picsum.photos/300/200"
+        },
+        {
+            image: "https://picsum.photos/300/200"
+        }, 
+        {
+            image: "https://picsum.photos/300/200"
+        },
+        {
+            image: "https://picsum.photos/300/200"
+        },
+        {
+            image: "https://picsum.photos/300/200"
+        }, 
+        {
+            image: "https://picsum.photos/300/200"
+        },
+        {
+            image: "https://picsum.photos/300/200"
+        }
     ],
     link: "See More of These"
 }

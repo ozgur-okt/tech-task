@@ -1,5 +1,6 @@
 export const topBar = {
   logo: require("../assets/logo.png"),
+  alt: "logo",
   links: [
     {
       name: "Home.",
