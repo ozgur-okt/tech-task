@@ -6,9 +6,6 @@ export const home = {
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing \"elit. Lorem ipsum dolor sit amet.\"",
     image: digitalization,
     alt: "digitalization",
-    button:
-    {
-        text: "More About us"
-    },
+    buttonText: "More About us",
     link: "Get in Touch."
 }

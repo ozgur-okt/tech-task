@@ -9,7 +9,7 @@ function Home() {
         <h3>{home.title}</h3>
         <p>{home.subtitle}</p>
         <div className={styles.buttonLinkContainer}>
-          <button>{home.button.text}</button>
+          <button>{home.buttonText}</button>
           <a href={home.link.url}>{home.link}</a>
         </div>
       </div>

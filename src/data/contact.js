@@ -1,23 +1,19 @@
 export const contact = {
     section: "CONTACT US",
     title: "Get in Touch",
-    palceholders: [
-        {
-            name: "Your email",
+    inputs: {
+        email: {
+            placeholder: "Your email",
             type: "email"
         },
-        {
-            name: "Sucject",
+        subject: {
+            placeholder: "Subject",
             type: "text"
         },
-        {
-            name: "Message here...",
+        message: {
+            placeholder: "Message here...",
             type: "textarea"
-        }
-    ],
-    buttons: [
-        {
-            text: "Send Message"
-        }
-    ]
+        },
+    },
+    buttonText : "Send Message"
 }
