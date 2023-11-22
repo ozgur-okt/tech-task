@@ -15,14 +15,16 @@
   }
 
   .navbar {
-    margin: auto;
+    margin-left: 5%;
     border: 1px solid blue;
+    width: 72%;
 
     .navBtn {
-      padding: 0.5rem 1rem;
+      padding: 0rem 0.75rem;
+      text-decoration: none;
       border: none;
       background-color: transparent;
-      color: purple;
+      color: #464E90;
       font-size: 1rem;
       font-weight: 800;
       cursor: pointer;
@@ -30,11 +32,14 @@
       margin-right: 1rem;
 
       &:hover {
-        color: #5d2ae5;
+        color: #FF3946;
       }
     }
 
     .select {
+      display: inline;
+      margin-left: 11%;
+      margin-right: 20px;
 
 
       select {
@@ -44,12 +49,12 @@
         /* Safari and Chrome */
         appearance: none;
         border: none;
-        color: purple;
+        color: #464E90;
         background: url('../assets/icons/icon-down-arrow.svg') no-repeat left 22px bottom 1px;
         width: 30px;
         font-size: 1rem;
         font-weight: 500;
-
+        cursor: pointer;
       }
     }
 
@@ -60,15 +65,23 @@
     .contactBtn {
       border: none;
       background-color: transparent;
-      color: red;
+      color: #FF3946;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
       font-size: 1rem;
       font-weight: 800;
       height: 3rem;
       width: 10rem;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      position: relative;
 
       &:hover {
         color: #5d2ae5;
+      }
+
+      img {
+        position: relative;
+        top: 5px;
       }
     }
   }

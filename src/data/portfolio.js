@@ -1,61 +1,89 @@
+import rightArrow from "../assets/icons/icon-right-arrow.svg";
+import leftArrow from "../assets/icons/icon-left-arrow.svg";
+
 export const portfolio = {
     section: "PORTFOLIO",
     title: "See some of our Creative work.",
     cards: [
         {
-            image: "https://picsum.photos/350/200"
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
         },
         {
-            image: "https://picsum.photos/350/200"
-        }, 
-        {
-            image: "https://picsum.photos/350/200"
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
         },
         {
-            image: "https://picsum.photos/350/200"
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
         },
         {
-            image: "https://picsum.photos/350/200"
-        }, 
-        {
-            image: "https://picsum.photos/350/200"
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
         },
         {
-            image: "https://picsum.photos/350/200"
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
         },
         {
-            image: "https://picsum.photos/350/200"
-        }, 
-        {
-            image: "https://picsum.photos/350/200"
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
         },
         {
-            image: "https://picsum.photos/350/200"
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
         },
         {
-            image: "https://picsum.photos/350/200"
-        }, 
-        {
-            image: "https://picsum.photos/350/200"
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
         },
         {
-            image: "https://picsum.photos/350/200"
-        }, 
-        {
-            image: "https://picsum.photos/350/200"
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
         },
         {
-            image: "https://picsum.photos/350/200"
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
         },
         {
-            image: "https://picsum.photos/350/200"
-        }, 
-        {
-            image: "https://picsum.photos/350/200"
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
         },
         {
-            image: "https://picsum.photos/350/200"
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
+        },
+        {
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
+        },
+        {
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
+        },
+        {
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
+        },
+        {
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
+        },
+        {
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
+        },
+        {
+            image: "https://picsum.photos/350/200",
+            alt: "Image",
         }
     ],
-    link: "See More of These"
+    icons : {
+        leftArrow: leftArrow,
+        rightArrow: rightArrow,
+    },
+    link: {
+        name: "See More of These.", 
+        link: "/",
+    }
 }

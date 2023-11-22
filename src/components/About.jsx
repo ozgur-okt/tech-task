@@ -21,6 +21,10 @@ function About() {
             ))}
           </div>
         </div>
+        <div className={styles.arrows}>
+            <img src={about.icons.leftArrow} />
+            <img src={about.icons.rightArrow} />
+          </div>
       </div>
     </div>
   );

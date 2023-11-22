@@ -9,14 +9,14 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 3rem;
-    color: purple
+    color: #464E90
   }
 
   button {
     padding: 0.7rem 2rem;
     border: none;
     border-radius: 25px;
-    background-color: purple;
+    background-color: #FF3946;
     color: white;
     font-size: 0.8rem;
     cursor: pointer;
@@ -32,10 +32,18 @@
     padding: 2rem;
     margin: 0 1rem;
     width: 60%;
-    //border: 1px solid red;
+    //border: 1px solid #FF3946;
     height: 20rem;
-    color: purple;
+    border-radius: 3px;
+    color: #464E90;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+      background-color: #FF3946;
+    }
 
     h3 {
       font-size: 1.5rem;
@@ -46,6 +54,7 @@
     p {
       font-size: 0.9rem;
       font-weight: 500;
+      line-height: 1.5rem;
     }
   }
 }

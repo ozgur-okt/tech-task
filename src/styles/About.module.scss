@@ -1,8 +1,9 @@
 .aboutContainer {
   display: flex;
-  height: 70vh;
+  height: 55vh;
   width: 70vw;
   margin: auto;
+  gap: 2rem;
   border: 1px solid blue;
 
   .image {
@@ -12,7 +13,7 @@
 
   h5 {
     font-weight: 700;
-    color: red
+    color: #FF3946
   }
 
   .c1 {
@@ -20,30 +21,44 @@
     border: 1px solid blue;
     overflow-x: scroll;
     width: 30vw;
+    cursor: pointer;
 
     .c2 {
       display: flex;
       gap: 1rem;
 
       .i {
-        height: 30vh;
+        height: 25vh;
         width: 30vw;
+        padding: 1rem;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.02);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 4rem;
+          font-weight: 700;
+          line-height: 0rem;
+          color: #464E90;
+        }
+
+        p {
+          font-size: 0.9rem;
+          font-weight: 500;
+          line-height: 1.5rem;
+          color: gray;
+        }
+
       }
 
-      h1 {
-        font-size: 2rem;
-        margin-bottom: 4rem;
-        font-weight: 700;
-        color: purple;
-      }
-
-      p {
-        font-size: 0.9rem;
-        font-weight: 500;
-        line-height: 1.5rem;
-        color: gray;
-      }
     }
+  }
+  .arrows {
+    
   }
 
   ::-webkit-scrollbar {

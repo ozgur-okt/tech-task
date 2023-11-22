@@ -7,5 +7,8 @@ export const home = {
     image: digitalization,
     alt: "digitalization",
     buttonText: "More About us",
-    link: "Get in Touch."
+    link: {
+        name:"Get in Touch.", 
+        link: "/"
+    },
 }

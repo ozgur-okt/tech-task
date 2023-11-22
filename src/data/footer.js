@@ -13,23 +13,23 @@ export const footer = {
     },
     {
       name: "About us.",
-      link: "/about"
+      link: "/"
     },
     {
       name: "Portfolio.",
-      link: "/portfolio"
+      link: "/"
     },
     {
       name: "Blog.",
-      link: "/contact"
+      link: "/"
     },
     {
       name: "Services.",
-      link: "/services"
+      link: "/"
     },
     {
       name: "Contact us.",
-      link: "/contact"
+      link: "/"
     },
   ],
   license: "2015 DOOB. All rights reserved.",

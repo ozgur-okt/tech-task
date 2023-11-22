@@ -2,12 +2,18 @@
   height: 80vh;
   width: 70vw;
   margin: auto;
-  border: 1px solid blue;
+  border: 1px dashed blue;
 
-  h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: purple;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #464E90;
+    }
   }
 
   .c1 {
@@ -18,8 +24,14 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      height: 55vh;
+      height: 65vh;
       gap: 30px;
+    }
+
+    img {
+      width: 22vw;
+      height: 28vh;
+      border: 1px solid #FF3946;
     }
   }
 
@@ -30,12 +42,13 @@
   .link {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    //margin-top: 1rem;
 
     a {
       font-size: 1rem;
       font-weight: 800;
-      color: red;
+      color: #FF3946;
+      text-decoration: none;
     }
   }
 

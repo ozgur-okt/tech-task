@@ -8,9 +8,9 @@ function Footer() {
       <h1> {footer.title} </h1>
       <div className={styles.links}>
         {footer.links.map((link, index) => (
-          <button key={index}>
+          <a key={index} href={link.link}>
             {link.name}
-          </button>
+          </a>
         ))}
       </div>
       <p>{footer.license}</p>

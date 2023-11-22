@@ -4,18 +4,24 @@ import styles from '../styles/Portfolio.module.scss';
 function Portfolio() {
   return (
     <div className={styles.portfolioContainer}>
-      <h1>{portfolio.title}</h1>
+      <div className={styles.header}>
+        <h1>{portfolio.title}</h1>
+        <div>
+          <img src={portfolio.icons.leftArrow} />
+          <img src={portfolio.icons.rightArrow} />
+        </div>
+      </div>
       <div className={styles.c1}>
         <div className={styles.c2}>
           {portfolio.cards.map((card, index) => (
-            <div key={index}>
-              <img src={card.image} alt={card.title} />
+            <div key={index} className={styles.image}>
+              <img src={card.image} alt={card.alt} />
             </div>
           ))}
         </div>
       </div>
       <div className={styles.link}>
-        <a href='/'>{portfolio.link}</a>
+        <a href={portfolio.link.link}>{portfolio.link.name}</a>
       </div>
     </div>
   );

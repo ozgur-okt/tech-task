@@ -2,7 +2,7 @@
   display: flex;
   height: 70vh;
   width: 70vw;
-  margin: auto;
+  margin: auto;  
 
   .textContainer {
     border: 1px solid blue;
@@ -15,12 +15,12 @@
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 1rem;
-      color: purple
+      color: #464E90
     }
 
     p {
       font-size: 1rem;
-      font-weight: 400;
+      font-weight: 500;
       margin-bottom: 1rem;
       color: gray;
     }
@@ -29,9 +29,10 @@
       padding: 1rem 2rem;
       border: none;
       border-radius: 25px;
-      background-color: purple;
+      background-color: #FF3946;
       color: white;
-      font-size: 0.8rem;
+      font-size: 1rem;
+      font-weight: 800;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
       margin-right: 1rem;
@@ -43,9 +44,9 @@
 
     a {
       text-decoration: none;
-      font-size: 0.8rem;
+      font-size: 1rem;
       font-weight: 700;
-      color: purple;
+      color: #464E90;
     }
   }
 

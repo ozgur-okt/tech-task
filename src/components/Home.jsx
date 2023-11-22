@@ -9,7 +9,7 @@ function Home() {
         <p>{home.subtitle}</p>
         <div>
           <button>{home.buttonText}</button>
-          <a href={home.link.url}>{home.link}</a>
+          <a href={home.link.link}>{home.link.name}</a>
         </div>
       </div>
       <img className={styles.homeImage} src={home.image} alt={home.alt} />

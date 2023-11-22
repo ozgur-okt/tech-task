@@ -11,7 +11,7 @@ function TopBar() {
       <div className={styles.navbar}>
         {topBar.links.map((link, index) => {
           return (
-            <button className={styles.navBtn} key={index} > {link.name} </button>
+            <a className={styles.navBtn} key={index} href={link.link} > {link.name} </a>
           )
         })}
         <div className={styles.select}>
@@ -23,7 +23,9 @@ function TopBar() {
             })}
           </select>
         </div>
-        <button className={styles.contactBtn}> {topBar.button.text} </button>
+        <button className={styles.contactBtn}> {topBar.button.text}
+          <img src={topBar.button.icon} />
+        </button>
       </div>
     </nav>
   )

@@ -6,7 +6,13 @@ function Blog() {
   return (
     <div className={styles.blogContainer}>
       <h5>{blog.section}</h5>
-      <h1>{blog.title}</h1>
+      <div className={styles.header}>
+        <h1>{blog.title}</h1>
+        <div>
+          <img src={blog.icons.leftArrow} />
+          <img src={blog.icons.rightArrow} />
+        </div>
+      </div>
       <div className={styles.c1}>
         <div className={styles.c2}>
           {blog.cards.map((card, index) => (

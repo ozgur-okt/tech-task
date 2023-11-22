@@ -5,31 +5,63 @@
   border: 1px solid blue;
 
   h5 {
-    color: red;
+    color: #FF3946;
+    line-height: 0;
   }
 
-  h1 {
-    color: purple;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      color: #464E90;
+      line-height: 1rem;
+      margin-bottom: 3rem;
+    }
   }
 
   .c1 {
     display: flex;
+    height: 20rem;
     border: 1px solid blue;
     overflow-x: scroll;
 
+
     .c2 {
       display: flex;
-      gap: 1rem;
+      gap: 2rem;
 
       .card {
-        height: 20rem;
-        width: 20rem;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        border: 1px solid blue;
+        height: 17rem;
+        width: 15rem;
+        max-width: 20rem;
+        padding: 1rem 2rem;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.196);
+        -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.284);
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.154);
 
+        color: #464E90;
+        
+
+        h3 {
+        }
+
+        p {
+          margin-bottom: 2rem;
+          line-height: 1.8rem;
+          font-weight: 600;
+        }
+
+        p:last-child {
+          
+        }
         &:hover {
           color: white;
-          background-color: red;
+          background-color: #FF3946;
         }
       }
     }
