@@ -1,10 +1,11 @@
+import Footer from './components/Footer';
 import TopBar from './components/TopBar';
-import About from './pages/About';
-import Blog from './pages/Blog';
-import Contact from './pages/Contact';
-import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
-import Services from './pages/Services';
+import About from './components/About';
+import Blog from './components/Blog';
+import Contact from './components/Contact';
+import Home from './components/Home';
+import Portfolio from './components/Portfolio';
+import Services from './components/Services';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Portfolio />
       <Blog />
       <Contact />
+      <Footer />
     </>
   );
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 import { contact } from '../data/contact'
 import styles from '../styles/Contact.module.scss'
 

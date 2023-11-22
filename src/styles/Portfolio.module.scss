@@ -9,19 +9,34 @@
     font-weight: 600;
     color: purple;
   }
-  .card {
-    //margin: 0px;
-    margin-bottom: 2rem;
+
+  .c1 {
+    overflow-x: scroll;
+    border: 1px solid blue;
+
+    .c2 {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 55vh;
+      gap: 30px;
+    }
   }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   .link {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+
     a {
       font-size: 1rem;
       font-weight: 800;
       color: red;
     }
   }
-  
+
 }

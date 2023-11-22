@@ -1,38 +1,50 @@
+import facebook from "../assets/icons/icon-facebook.svg";
+import twitter from "../assets/icons/icon-twitter.svg";
+import instagram from "../assets/icons/icon-instagram.svg";
+
 export const footer = {
-    section: "FOOTER",
-    brand: "DOOB",
-    title: "CREATIVITY ABOVE",
-    links: [
-        {
-            title: "Home",
-            url: "/"
-        },
-        {
-            title: "About",
-            url: "/about"
-        },
-        {
-            title: "Work",
-            url: "/work"
-        },
-        {
-            title: "Contact",
-            url: "/contact"
-        }
-    ],
-    license: "2015 DOOB. All rights reserved.",
-    media: [
-        {
-            alt: "Facebook",
-            icon: require("../assets/icons/icon-facebook.svg"),
-        },
-        {
-            alt: "Twitter",
-            icon: require("../assets/icons/icon-twitter.svg"),
-        },
-        {
-            alt: "Instagram",
-            icon: require("../assets/icons/icon-instagram.svg"),
-        }
-    ]
+  section: "FOOTER",
+  brand: "DOOB",
+  title: "CREATIVITY ABOVE",
+  links: [
+    {
+      name: "Home.",
+      link: "/"
+    },
+    {
+      name: "About us.",
+      link: "/about"
+    },
+    {
+      name: "Portfolio.",
+      link: "/portfolio"
+    },
+    {
+      name: "Blog.",
+      link: "/contact"
+    },
+    {
+      name: "Services.",
+      link: "/services"
+    },
+    {
+      name: "Contact us.",
+      link: "/contact"
+    },
+  ],
+  license: "2015 DOOB. All rights reserved.",
+  medias: [
+    {
+      alt: "Facebook",
+      icon: facebook,
+    },
+    {
+      alt: "Twitter",
+      icon: twitter,
+    },
+    {
+      alt: "Instagram",
+      icon: instagram,
+    }
+  ]
 }

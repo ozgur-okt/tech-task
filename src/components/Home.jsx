@@ -1,4 +1,3 @@
-import React from 'react';
 import { home } from "../data/home";
 import styles from '../styles/Home.module.scss';
 

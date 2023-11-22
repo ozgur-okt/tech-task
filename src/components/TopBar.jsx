@@ -1,11 +1,10 @@
-import React from 'react'
 import { topBar } from '../data/topBar'
 import styles from '../styles/TopBar.module.scss'
 
 
 function TopBar() {
   return (
-    <div className={styles.topBarContainer}>
+    <nav className={styles.topBarContainer}>
       <div className={styles.logo}>
         <img src={topBar.logo} alt={topBar.alt}></img>
       </div>
@@ -15,9 +14,18 @@ function TopBar() {
             <button className={styles.navBtn} key={index} > {link.name} </button>
           )
         })}
+        <div className={styles.select}>
+          <select>
+            {topBar.languages.map((language, index) => {
+              return (
+                <option key={index} value={language}>{language}</option>
+              )
+            })}
+          </select>
+        </div>
         <button className={styles.contactBtn}> {topBar.button.text} </button>
       </div>
-    </div>
+    </nav>
   )
 }
 

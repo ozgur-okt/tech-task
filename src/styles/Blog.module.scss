@@ -12,19 +12,30 @@
     color: purple;
   }
 
-  .carousel {
-    width: 100%;
+  .c1 {
+    display: flex;
+    border: 1px solid blue;
+    overflow-x: scroll;
 
-    .card {
-      height: 20rem;
-      //margin: 0 ;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-      border: 1px solid blue;
+    .c2 {
+      display: flex;
+      gap: 1rem;
 
-      &:hover {
-        color: white;
-        background-color: red;
+      .card {
+        height: 20rem;
+        width: 20rem;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        border: 1px solid blue;
+
+        &:hover {
+          color: white;
+          background-color: red;
+        }
       }
     }
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 }

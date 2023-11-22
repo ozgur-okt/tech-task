@@ -17,6 +17,7 @@
   .navbar {
     margin: auto;
     border: 1px solid blue;
+
     .navBtn {
       padding: 0.5rem 1rem;
       border: none;
@@ -32,6 +33,29 @@
         color: #5d2ae5;
       }
     }
+
+    .select {
+
+
+      select {
+        -moz-appearance: none;
+        /* Firefox */
+        -webkit-appearance: none;
+        /* Safari and Chrome */
+        appearance: none;
+        border: none;
+        color: purple;
+        background: url('../assets/icons/icon-down-arrow.svg') no-repeat left 22px bottom 1px;
+        width: 30px;
+        font-size: 1rem;
+        font-weight: 500;
+
+      }
+    }
+
+    // .navBtn:last-child {
+    //   margin-right: 0;
+    // }
 
     .contactBtn {
       border: none;

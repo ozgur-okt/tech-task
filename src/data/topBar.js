@@ -12,7 +12,7 @@ export const topBar = {
     },
     {
       name: "Portfolio.",
-      link: "/contact"
+      link: "/portfolio"
     },
     {
       name: "Blog.",
@@ -20,7 +20,7 @@ export const topBar = {
     },
     {
       name: "Services.",
-      link: "/contact"
+      link: "/services"
     },
     {
       name: "Contact us.",

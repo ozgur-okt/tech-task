@@ -15,28 +15,38 @@
     color: red
   }
 
-  .carousel {
+  .c1 {
+    display: flex;
     border: 1px solid blue;
-    max-width: 500px;
-    min-height: 300px;
+    overflow-x: scroll;
+    width: 30vw;
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 4rem;
-      font-weight: 700;
-      color: purple;
-    }
-    
-    p{
-      font-size: 0.9rem;
-      font-weight: 500;
-      line-height: 1.5rem;
-      color: gray;
+    .c2 {
+      display: flex;
+      gap: 1rem;
+
+      .i {
+        height: 30vh;
+        width: 30vw;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        font-weight: 700;
+        color: purple;
+      }
+
+      p {
+        font-size: 0.9rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        color: gray;
+      }
     }
   }
 
-  
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
-
-/* About.module.scss */
-
