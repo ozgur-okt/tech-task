@@ -1,3 +1,5 @@
+$container-width: 70vw;
+$container-height: 45vh;
 $color-h5: #FF3946;
 $color-h1: #464E90;
 $color-placeholder: #464E90;
@@ -10,10 +12,12 @@ $background-color-hover: #5d2ae5;
 $font-weight-placeholder: 600;
 $opacity-placeholder: 0.7;
 $font-size-button: 0.8rem;
+$border-radius-button: 25px;
+$transition: all 0.3s ease-in-out;
 
 .contactContainer {
-  height: 55vh;
-  width: 70vw;
+  width: $container-width;
+  height: $container-height;
   margin: auto;
 
   h5 {
@@ -67,17 +71,32 @@ $font-size-button: 0.8rem;
   button {
     padding: 0.7rem 2rem;
     border: none;
-    border-radius: 25px;
+    border-radius: $border-radius-button;
     background-color: $background-color-button;
     color: $color-button;
     font-size: $font-size-button;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: $transition;
     display: block;
     margin: auto;
 
     &:hover {
       background-color: $background-color-hover;
+      scale: 0.95;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+
+    .email, .subject {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+
+    .message {
+      width: 100%;
     }
   }
 }

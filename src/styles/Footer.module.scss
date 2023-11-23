@@ -1,22 +1,24 @@
+$container-width: 100%;
+$container-height: 40vh;
 $color-h5: white;
 $color-h1: #FF3946;
 $color-a: white;
 $color-p: white;
+$background-color-footerContainer: #314584;
 $line-height-h5: 0rem;
 $line-height-h1: 0rem;
 $font-size-a: 1rem;
 $font-size-p: 1rem;
 $font-weight-a: 600;
 $font-weight-p: 600;
-$background-color-footerContainer: #314584;
 
 .footerContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40vh;
-  width: 100%;
+  width: $container-width;
+  height: $container-height;
   background-color: $background-color-footerContainer;
 
   h5 {
@@ -26,8 +28,7 @@ $background-color-footerContainer: #314584;
 
   h1 {
     color: $color-h1;
-    line-height: $line-height-h1;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .links {
@@ -54,7 +55,6 @@ $background-color-footerContainer: #314584;
     gap: 4rem;
   }
 
-  // Responsive styles
   @media (max-width: 768px) {
     height: auto;
 

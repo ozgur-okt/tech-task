@@ -1,3 +1,5 @@
+$container-width: 70vw;
+$container-height: 70vh;
 $color-h1: #464E90;
 $color-p: gray;
 $color-button: white;
@@ -12,12 +14,14 @@ $font-weight-h1: 700;
 $font-weight-p: 500;
 $font-weight-button: 800;
 $font-weight-a: 700;
+$border-radius-button: 25px;
+$transition: all 0.3s ease-in-out;
 
 .homeContainer {
   display: flex;
-  height: 70vh;
-  width: 70vw;
-  margin: auto;  
+  width: $container-width;
+  height: $container-height;
+  margin: auto;
 
   .textContainer {
     width: 50%;
@@ -42,17 +46,18 @@ $font-weight-a: 700;
     button {
       padding: 1rem 2rem;
       border: none;
-      border-radius: 25px;
+      border-radius: $border-radius-button;
       background-color: $background-color-button;
       color: $color-button;
       font-size: $font-size-button;
       font-weight: $font-weight-button;
       cursor: pointer;
-      transition: all 0.3s ease-in-out;
+      transition: $transition;
       margin-right: 1rem;
 
       &:hover {
         background-color: $background-color-hover;
+        
       }
     }
 
@@ -66,6 +71,19 @@ $font-weight-a: 700;
 
   .homeImage {
     width: 50%;
-    //object-fit:cover;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+
+    .textContainer {
+      width: 100%;
+    }
+
+    .homeImage {
+      width: 100%;
+    }
   }
 }

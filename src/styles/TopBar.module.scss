@@ -1,21 +1,24 @@
+$container-height: 6rem;
 $color-navBtn: #464E90;
 $color-navBtn-hover: #FF3946;
 $color-select: #464E90;
 $color-contactBtn: #FF3946;
-$color-contactBtn-hover: #5d2ae5;
+$color-contactBtn-hover: #464E90;
 $font-size-navBtn: 1rem;
 $font-size-select: 1rem;
 $font-size-contactBtn: 1rem;
 $font-weight-navBtn: 800;
 $font-weight-select: 500;
 $font-weight-contactBtn: 800;
+$box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+$transition: all 0.3s ease-in-out;
 
 .topBarContainer {
   display: flex;
   align-items: center;
+  height: $container-height;
   padding: 0 1rem;
-  height: 6rem;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: $box-shadow;
 
   .logo {
     img {
@@ -37,7 +40,7 @@ $font-weight-contactBtn: 800;
       font-size: $font-size-navBtn;
       font-weight: $font-weight-navBtn;
       cursor: pointer;
-      transition: all 0.3s ease-in-out;
+      transition: $transition;
       margin-right: 1rem;
 
       &:hover {
@@ -70,22 +73,51 @@ $font-weight-contactBtn: 800;
       border: none;
       background-color: transparent;
       color: $color-contactBtn;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      box-shadow: $box-shadow;
       font-size: $font-size-contactBtn;
       font-weight: $font-weight-contactBtn;
       height: 3rem;
       width: 10rem;
       cursor: pointer;
-      transition: all 0.3s ease-in-out;
+      border-radius: 3px;
+      transition: $transition;
       position: relative;
 
       &:hover {
         color: $color-contactBtn-hover;
+        scale: 1.05;
+        .arrowIcon {
+          fill: $color-contactBtn-hover;
+        }
       }
 
-      img {
+      .arrowIcon {
+        fill: $color-contactBtn;
         position: relative;
         top: 5px;
+
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+
+    .navbar {
+      width: 100%;
+      margin-left: 0;
+
+      .navBtn {
+        margin-right: 0;
+      }
+
+      .select {
+        margin-left: 0;
+      }
+
+      .contactBtn {
+        width: 100%;
       }
     }
   }

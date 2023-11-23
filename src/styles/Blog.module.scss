@@ -1,3 +1,5 @@
+$container-width: 70vw;
+$container-height: 60vh;
 $color-h5: #FF3946;
 $color-h1: #464E90;
 $color-card: #464E90;
@@ -7,12 +9,15 @@ $font-weight-p: 600;
 $line-height-h5: 0;
 $line-height-h1: 1rem;
 $line-height-p: 1.8rem;
-$box-shadow-card: 0px 0px 3px 0px rgba(0, 0, 0, 0.154);
+$border-radius-card: 3px;
+$box-shadow-card: 0 0 25px rgba(0, 0, 0, 0.1);
+$transition: all 0.3s ease-in-out;
 
 .blogContainer {
-  height: 70vh;
-  width: 70vw;
+  width: $container-width;
+  height: $container-height;
   margin: auto;
+  padding: 5rem 0;
 
   h5 {
     color: $color-h5;
@@ -31,12 +36,13 @@ $box-shadow-card: 0px 0px 3px 0px rgba(0, 0, 0, 0.154);
     }
   }
 
-  .c1 {
+  .sliderContainer {
     display: flex;
     height: 20rem;
+    padding: 1rem 0.7rem 1rem 0.7rem;
     overflow-x: scroll;
 
-    .c2 {
+    .slider {
       display: flex;
       gap: 2rem;
 
@@ -45,16 +51,14 @@ $box-shadow-card: 0px 0px 3px 0px rgba(0, 0, 0, 0.154);
         width: 15rem;
         max-width: 20rem;
         padding: 1rem 2rem;
-        border-radius: 2px;
+        border-radius: $border-radius-card;
         cursor: pointer;
-        transition: all 0.3s ease-in-out;
+        transition: $transition;
         -webkit-box-shadow: $box-shadow-card;
         -moz-box-shadow: $box-shadow-card;
         box-shadow: $box-shadow-card;
         color: $color-card;
-
-        h3 {
-        }
+        position: relative;
 
         p {
           margin-bottom: 2rem;
@@ -62,12 +66,19 @@ $box-shadow-card: 0px 0px 3px 0px rgba(0, 0, 0, 0.154);
           font-weight: $font-weight-p;
         }
 
-        p:last-child {
+        .arrowIcon {
+          position: absolute;
+          bottom: 1rem;
+          right: 2rem;
         }
 
         &:hover {
           color: $color-hover;
           background-color: $background-color-hover;
+
+          .arrowIcon {
+            fill: $color-hover;
+          }
         }
       }
     }
@@ -75,5 +86,26 @@ $box-shadow-card: 0px 0px 3px 0px rgba(0, 0, 0, 0.154);
 
   ::-webkit-scrollbar {
     display: none;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+
+    .header {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .sliderContainer {
+      .slider {
+        flex-direction: row;
+      }
+
+      .card {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }

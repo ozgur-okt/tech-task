@@ -11,8 +11,8 @@ function Portfolio() {
           <img src={portfolio.icons.rightArrow} alt={portfolio.icons.alt}/>
         </div>
       </div>
-      <div className={styles.c1}>
-        <div className={styles.c2}>
+      <div className={styles.sliderContainer}>
+        <div className={styles.slider}>
           {portfolio.cards.map((card, index) => (
             <div key={index} className={styles.image}>
               <img src={card.image} alt={card.alt} />

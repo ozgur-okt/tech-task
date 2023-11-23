@@ -1,6 +1,6 @@
 import { topBar } from '../data/topBar'
 import styles from '../styles/TopBar.module.scss'
-
+import {ReactComponent as ArrowIcon} from '../assets/icons/icon-red-right-arrow.svg'
 
 function TopBar() {
   return (
@@ -24,7 +24,7 @@ function TopBar() {
           </select>
         </div>
         <button className={styles.contactBtn}> {topBar.button.text}
-          <img src={topBar.button.icon} alt={topBar.button.alt}/>
+        <ArrowIcon className={styles.arrowIcon}/>
         </button>
       </div>
     </nav>
