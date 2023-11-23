@@ -19,7 +19,7 @@ function Blog() {
           {blog.cards.map((card, index) => (
             <div className={styles.card} key={index}>
               <h3>{card.title}</h3>
-              <p>{card.date}</p>
+              <p className={styles.date}>{card.date}</p>
               <p>{card.description}</p>
               <ArrowIcon className={styles.arrowIcon} />
             </div>

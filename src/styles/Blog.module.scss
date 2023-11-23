@@ -2,6 +2,8 @@ $container-width: 70vw;
 $container-height: 60vh;
 $color-h5: #FF3946;
 $color-h1: #464E90;
+$color-p: gray;
+$color-p-hover: white;
 $color-card: #464E90;
 $color-hover: white;
 $background-color-hover: #FF3946;
@@ -66,6 +68,11 @@ $transition: all 0.3s ease-in-out;
           font-weight: $font-weight-p;
         }
 
+        .date {
+          color: $color-p;
+          transition: $transition;
+        }
+
         .arrowIcon {
           position: absolute;
           bottom: 1rem;
@@ -75,6 +82,10 @@ $transition: all 0.3s ease-in-out;
         &:hover {
           color: $color-hover;
           background-color: $background-color-hover;
+
+          .date {
+            color: $color-p-hover;
+          }
 
           .arrowIcon {
             fill: $color-hover;
