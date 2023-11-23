@@ -1,5 +1,5 @@
-import { portfolio } from '../data/portfolio';
-import styles from '../styles/Portfolio.module.scss';
+import { portfolio } from '../data/portfolio'
+import styles from '../styles/Portfolio.module.scss'
 
 function Portfolio() {
   return (
@@ -24,7 +24,7 @@ function Portfolio() {
         <a href={portfolio.link.link}>{portfolio.link.name}</a>
       </div>
     </div>
-  );
+  )
 }
 
-export default Portfolio;
+export default Portfolio

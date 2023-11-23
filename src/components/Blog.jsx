@@ -1,5 +1,5 @@
 import { blog } from '../data/blog'
-import styles from '../styles/Blog.module.scss';
+import styles from '../styles/Blog.module.scss'
 import { ReactComponent as ArrowIcon } from '../assets/icons/icon-red-right-arrow.svg'
 
 function Blog() {
@@ -27,7 +27,7 @@ function Blog() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default Blog

@@ -1,5 +1,5 @@
 import Footer from './components/Footer';
-import TopBar from './components/TopBar';
+import Navbar from './components/Navbar';
 import About from './components/About';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
@@ -10,7 +10,7 @@ import Services from './components/Services';
 function App() {
   return (
     <>
-      <TopBar />
+      <Navbar />
       <Home />
       <Services />
       <About />

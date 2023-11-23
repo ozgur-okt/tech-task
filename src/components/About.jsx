@@ -1,5 +1,5 @@
-import { about } from '../data/about';
-import styles from '../styles/About.module.scss';
+import { about } from '../data/about'
+import styles from '../styles/About.module.scss'
 
 function About() {
 
@@ -26,7 +26,7 @@ function About() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default About;
+export default About

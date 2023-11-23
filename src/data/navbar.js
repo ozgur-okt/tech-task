@@ -1,6 +1,4 @@
-import rightArrow from '../assets/icons/icon-red-right-arrow.svg'
-
-export const topBar = {
+export const navbar = {
   logo: require("../assets/logo.png"),
   alt: "Logo",
   links: [
@@ -30,10 +28,5 @@ export const topBar = {
     },
   ],
   languages: ['EN', 'TR'],
-  button: 
-    {
-      text: "Contact Us ",
-      icon: rightArrow,
-      alt: "Right arrow",
-    }
+  buttonText: "Contact Us ",
 }

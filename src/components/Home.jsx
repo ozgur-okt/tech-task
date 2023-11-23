@@ -1,5 +1,5 @@
-import { home } from "../data/home";
-import styles from '../styles/Home.module.scss';
+import { home } from "../data/home"
+import styles from '../styles/Home.module.scss'
 
 function Home() {
   return (
@@ -14,7 +14,7 @@ function Home() {
       </div>
       <img className={styles.homeImage} src={home.image} alt={home.alt} />
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home
