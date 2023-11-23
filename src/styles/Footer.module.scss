@@ -1,43 +1,79 @@
-.footerContainer{
+$color-h5: white;
+$color-h1: #FF3946;
+$color-a: white;
+$color-p: white;
+$line-height-h5: 0rem;
+$line-height-h1: 0rem;
+$font-size-a: 1rem;
+$font-size-p: 1rem;
+$font-weight-a: 600;
+$font-weight-p: 600;
+$background-color-footerContainer: #314584;
+
+.footerContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 40vh;
   width: 100%;
-  background-color: #314584;
+  background-color: $background-color-footerContainer;
 
   h5 {
-    color: white;
-    line-height: 0rem;
+    color: $color-h5;
+    line-height: $line-height-h5;
   }
 
-  h1{
-    color: #FF3946;
-    line-height: 0rem;
+  h1 {
+    color: $color-h1;
+    line-height: $line-height-h1;
     margin-bottom: 3rem;
   }
 
   .links {
     margin-bottom: 1.5rem;
-    a{
-      color: white;
+
+    a {
+      color: $color-a;
       text-decoration: none;
-      font-size: 1rem;
+      font-size: $font-size-a;
       margin: 0 1rem;
-      font-weight: 600;
+      font-weight: $font-weight-a;
     }
   }
 
-  p{
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
+  p {
+    color: $color-p;
+    font-size: $font-size-p;
+    font-weight: $font-weight-p;
     margin-bottom: 1.8rem;
   }
 
   .medias {
     display: flex;
     gap: 4rem;
+  }
+
+  // Responsive styles
+  @media (max-width: 768px) {
+    height: auto;
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      a {
+        margin: 0.5rem 0;
+      }
+    }
+
+    .medias {
+      gap: 1rem;
+    }
   }
 }

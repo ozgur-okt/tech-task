@@ -1,12 +1,22 @@
+$color-h5: #FF3946;
+$color-h1: #464E90;
+$color-card: #464E90;
+$color-hover: white;
+$background-color-hover: #FF3946;
+$font-weight-p: 600;
+$line-height-h5: 0;
+$line-height-h1: 1rem;
+$line-height-p: 1.8rem;
+$box-shadow-card: 0px 0px 3px 0px rgba(0, 0, 0, 0.154);
+
 .blogContainer {
   height: 70vh;
   width: 70vw;
   margin: auto;
-  border: 1px solid blue;
 
   h5 {
-    color: #FF3946;
-    line-height: 0;
+    color: $color-h5;
+    line-height: $line-height-h5;
   }
 
   .header {
@@ -15,8 +25,8 @@
     align-items: center;
 
     h1 {
-      color: #464E90;
-      line-height: 1rem;
+      color: $color-h1;
+      line-height: $line-height-h1;
       margin-bottom: 3rem;
     }
   }
@@ -24,9 +34,7 @@
   .c1 {
     display: flex;
     height: 20rem;
-    border: 1px solid blue;
     overflow-x: scroll;
-
 
     .c2 {
       display: flex;
@@ -40,28 +48,26 @@
         border-radius: 2px;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
-        -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.196);
-        -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.284);
-        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.154);
-
-        color: #464E90;
-        
+        -webkit-box-shadow: $box-shadow-card;
+        -moz-box-shadow: $box-shadow-card;
+        box-shadow: $box-shadow-card;
+        color: $color-card;
 
         h3 {
         }
 
         p {
           margin-bottom: 2rem;
-          line-height: 1.8rem;
-          font-weight: 600;
+          line-height: $line-height-p;
+          font-weight: $font-weight-p;
         }
 
         p:last-child {
-          
         }
+
         &:hover {
-          color: white;
-          background-color: #FF3946;
+          color: $color-hover;
+          background-color: $background-color-hover;
         }
       }
     }

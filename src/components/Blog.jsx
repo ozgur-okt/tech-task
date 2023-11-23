@@ -9,8 +9,8 @@ function Blog() {
       <div className={styles.header}>
         <h1>{blog.title}</h1>
         <div>
-          <img src={blog.icons.leftArrow} />
-          <img src={blog.icons.rightArrow} />
+          <img src={blog.icons.leftArrow} alt={blog.icons.alt} />
+          <img src={blog.icons.rightArrow} alt={blog.icons.alt} />
         </div>
       </div>
       <div className={styles.c1}>

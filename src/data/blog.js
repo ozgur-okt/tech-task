@@ -7,6 +7,7 @@ export const blog = {
     icons : {
         leftArrow: leftArrow,
         rightArrow: rightArrow,
+        alt: "Arrow",
     },
     cards: [
         {

@@ -24,7 +24,7 @@ function TopBar() {
           </select>
         </div>
         <button className={styles.contactBtn}> {topBar.button.text}
-          <img src={topBar.button.icon} />
+          <img src={topBar.button.icon} alt={topBar.button.alt}/>
         </button>
       </div>
     </nav>

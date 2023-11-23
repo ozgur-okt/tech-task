@@ -7,8 +7,8 @@ function Portfolio() {
       <div className={styles.header}>
         <h1>{portfolio.title}</h1>
         <div>
-          <img src={portfolio.icons.leftArrow} />
-          <img src={portfolio.icons.rightArrow} />
+          <img src={portfolio.icons.leftArrow} alt={portfolio.icons.alt}/>
+          <img src={portfolio.icons.rightArrow} alt={portfolio.icons.alt}/>
         </div>
       </div>
       <div className={styles.c1}>

@@ -81,6 +81,7 @@ export const portfolio = {
     icons : {
         leftArrow: leftArrow,
         rightArrow: rightArrow,
+        alt: "Arrow",
     },
     link: {
         name: "See More of These.", 

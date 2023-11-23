@@ -1,8 +1,15 @@
+$color-h1: #464E90;
+$color-a: #FF3946;
+$color-border: #FF3946;
+$font-size-h1: 2rem;
+$font-size-a: 1rem;
+$font-weight-h1: 600;
+$font-weight-a: 800;
+
 .portfolioContainer {
   height: 80vh;
   width: 70vw;
   margin: auto;
-  border: 1px dashed blue;
 
   .header {
     display: flex;
@@ -10,15 +17,14 @@
     align-items: center;
 
     h1 {
-      font-size: 2rem;
-      font-weight: 600;
-      color: #464E90;
+      font-size: $font-size-h1;
+      font-weight: $font-weight-h1;
+      color: $color-h1;
     }
   }
 
   .c1 {
     overflow-x: scroll;
-    border: 1px solid blue;
 
     .c2 {
       display: flex;
@@ -31,7 +37,7 @@
     img {
       width: 22vw;
       height: 28vh;
-      border: 1px solid #FF3946;
+      border: 1px solid $color-border;
     }
   }
 
@@ -45,9 +51,9 @@
     //margin-top: 1rem;
 
     a {
-      font-size: 1rem;
-      font-weight: 800;
-      color: #FF3946;
+      font-size: $font-size-a;
+      font-weight: $font-weight-a;
+      color: $color-a;
       text-decoration: none;
     }
   }

@@ -5,7 +5,7 @@ import leftArrow from "../assets/icons/icon-left-arrow.svg";
 export const about = {
     section: "OUR COMPANY",
     image: table,
-    alt: "table",
+    alt: "Table",
     cards: [
         {
             title: "Some Fine Words About Us",
@@ -29,5 +29,6 @@ export const about = {
     icons : {
         leftArrow: leftArrow,
         rightArrow: rightArrow,
+        alt: "Arrow",
     },
 }

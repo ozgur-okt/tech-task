@@ -22,9 +22,9 @@ function About() {
           </div>
         </div>
         <div className={styles.arrows}>
-            <img src={about.icons.leftArrow} />
-            <img src={about.icons.rightArrow} />
-          </div>
+          <img src={about.icons.leftArrow} alt={about.icons.alt} />
+          <img src={about.icons.rightArrow} alt={about.icons.alt} />
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import { services } from '../data/services'
 import styles from '../styles/Services.module.scss'
-import { ReactComponent as BagSvg } from '../assets/icons/icon-portfolio.svg'
+//import { ReactComponent as BagSvg } from '../assets/icons/icon-portfolio.svg'
 
 function Services() {
   return (

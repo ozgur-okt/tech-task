@@ -1,10 +1,19 @@
+$color-h5: #FF3946;
+$color-h1: #464E90;
+$color-p: gray;
+$font-weight-h5: 700;
+$font-weight-h1: 700;
+$font-weight-p: 500;
+$font-size-h1: 2rem;
+$font-size-p: 0.9rem;
+$box-shadow-hover: 0 0 5px rgba(0, 0, 0, 0.1);
+
 .aboutContainer {
   display: flex;
   height: 55vh;
   width: 70vw;
   margin: auto;
   gap: 2rem;
-  border: 1px solid blue;
 
   .image {
     width: 50%;
@@ -12,13 +21,12 @@
   }
 
   h5 {
-    font-weight: 700;
-    color: #FF3946
+    font-weight: $font-weight-h5;
+    color: $color-h5;
   }
 
   .c1 {
     display: flex;
-    border: 1px solid blue;
     overflow-x: scroll;
     width: 30vw;
     cursor: pointer;
@@ -35,31 +43,30 @@
 
         &:hover {
           transform: scale(1.02);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: $box-shadow-hover;
         }
 
         h1 {
-          font-size: 2rem;
+          font-size: $font-size-h1;
           margin-bottom: 4rem;
-          font-weight: 700;
+          font-weight: $font-weight-h1;
           line-height: 0rem;
-          color: #464E90;
+          color: $color-h1;
         }
 
         p {
-          font-size: 0.9rem;
-          font-weight: 500;
+          font-size: $font-size-p;
+          font-weight: $font-weight-p;
           line-height: 1.5rem;
-          color: gray;
+          color: $color-p;
         }
 
       }
 
     }
   }
-  .arrows {
-    
-  }
+
+  .arrows {}
 
   ::-webkit-scrollbar {
     display: none;

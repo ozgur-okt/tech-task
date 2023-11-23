@@ -2,7 +2,7 @@ import rightArrow from '../assets/icons/icon-red-right-arrow.svg'
 
 export const topBar = {
   logo: require("../assets/logo.png"),
-  alt: "logo",
+  alt: "Logo",
   links: [
     {
       name: "Home.",
@@ -33,6 +33,7 @@ export const topBar = {
   button: 
     {
       text: "Contact Us ",
-      icon: rightArrow
+      icon: rightArrow,
+      alt: "Right arrow",
     }
 }

@@ -5,7 +5,7 @@ export const home = {
     title: "The Spirit of Digital Agency",
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing \"elit. Lorem ipsum dolor sit amet.\"",
     image: digitalization,
-    alt: "digitalization",
+    alt: "Digitalization",
     buttonText: "More About us",
     link: {
         name:"Get in Touch.", 
