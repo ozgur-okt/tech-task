@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Tech Task React Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a React application with Sass CSS for styling and responsive features to ensure a seamless user experience across various devices. To see project: https://tech-task-ozgur-okt.vercel.app/
 
-## Available Scripts
+[screen-capture (1).webm](https://github.com/ozgur-okt/tech-task/assets/73358116/f2c69b3e-ece6-4da0-bac4-f1bb33b435d3)
 
-In the project directory, you can run:
 
-### `npm start`
+## Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* React Components: The project is structured using React components to enhance code organization and maintainability.
+* Sass CSS: Styling is implemented using Sass, a popular CSS preprocessor, allowing for cleaner and more modular stylesheets.
+* Responsive Design: The application is designed to be responsive, providing a consistent and user-friendly experience on different devices and screen sizes.
 
-### `npm test`
+### Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Clone the Repository:
 
-### `npm run build`
+`git clone https://github.com/ozgur-okt/tech-task.git`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`cd tech-task`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Install Dependencies:
+`npm install`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Run the Application:
+`npm start`
 
-### `npm run eject`
+This will start the development server. Open your browser and navigate to http://localhost:3000 to view the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Project Structure
+The project structure is organized as follows:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* `src/` : Contains the source code for the React application.
+* `src/assets/`: Includes assets such as images, fonts, or any other static files used in the project.
+* `src/components/` : Houses React components used throughout the application.
+* `src/data/` : Contains the components' content, providing structured data for dynamic rendering or other purposes.
+* `src/styles/` : Contains Sass files for styling.
+* `public/` : Includes public assets and the HTML file used as the entry point for the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Contributing
+If you would like to contribute to the project, feel free to submit a pull request. Please follow the existing coding style and conventions.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### License
+This project is licensed under the MIT License.
