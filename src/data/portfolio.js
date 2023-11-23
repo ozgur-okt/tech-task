@@ -1,5 +1,5 @@
-import rightArrow from "../assets/icons/icon-right-arrow.svg";
-import leftArrow from "../assets/icons/icon-left-arrow.svg";
+import rightArrow from "../assets/icons/icon-right-arrow.svg"
+import leftArrow from "../assets/icons/icon-left-arrow.svg"
 
 export const portfolio = {
     section: "PORTFOLIO",
@@ -86,5 +86,5 @@ export const portfolio = {
     link: {
         name: "See More of These.", 
         link: "/",
-    }
+    },
 }

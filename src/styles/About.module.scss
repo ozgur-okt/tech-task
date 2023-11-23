@@ -43,10 +43,12 @@ $transition: all 0.3s ease-in-out;
         display: flex;
         flex-direction: column;
         gap: 0;
-        height: 27vh;
+        height: 30vh;
+        min-height: 30vh;
         width: 27vw;
         padding: 0 1rem;
         transition: $transition;
+        overflow-y: hidden;
 
         &:hover {
           transform: scale(0.95);
@@ -68,6 +70,10 @@ $transition: all 0.3s ease-in-out;
     }
   }
 
+  .arrows {
+    cursor: pointer;
+  }
+
   ::-webkit-scrollbar {
     display: none;
   }
@@ -85,10 +91,24 @@ $transition: all 0.3s ease-in-out;
       width: 100%;
 
       .slider {
+        
         .card {
           width: 100%;
+          overflow: auto;
+
+          h1 {
+            font-size: 1.5rem;
+          }
+
+          p{
+            font-size: 0.8rem;
+          }
         }
       }
+    }
+
+    .arrows {
+      display: none;
     }
   }
 }

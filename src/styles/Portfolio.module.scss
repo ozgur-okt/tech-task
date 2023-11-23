@@ -27,6 +27,10 @@ $transition: all 0.3s ease-in-out;
       font-weight: $font-weight-h1;
       color: $color-h1;
     }
+
+    .arrows {
+      cursor: pointer;
+    }
   }
 
   .sliderContainer {
@@ -83,9 +87,9 @@ $transition: all 0.3s ease-in-out;
     align-items: center;
 
     .header {
-      flex-direction: column;
-      align-items: start;
-      
+      width: 100%;
+      margin-bottom: 1rem;
+      justify-content:space-between;
     }
 
     .sliderContainer {

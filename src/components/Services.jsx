@@ -1,6 +1,5 @@
 import { services } from '../data/services'
 import styles from '../styles/Services.module.scss'
-//import { ReactComponent as BagSvg } from '../assets/icons/icon-portfolio.svg'
 
 function Services() {
   return (
@@ -9,15 +8,13 @@ function Services() {
         <h1>{services.title}</h1>
         <button>{services.buttonText}</button>
       </div>
-      {
-        services.cards.map((card, index) => (
-          <div className={styles.card} key={index}>
-            <img src={card.icon} alt={card.alt} />
-            <h3>{card.title}</h3>
-            <p>{card.description}</p>
-          </div>
-        ))
-      }
+      {services.cards.map((card, index) => (
+        <div className={styles.card} key={index}>
+          <img src={card.icon} alt={card.alt} />
+          <h3>{card.title}</h3>
+          <p>{card.description}</p>
+        </div>
+      ))}
     </div>
   )
 }

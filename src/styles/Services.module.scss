@@ -60,6 +60,7 @@ $transition: all 0.3s ease-in-out;
     box-shadow: $box-shadow-card;
     transition: $transition;
     cursor: pointer;
+    overflow: auto;
 
     &:hover {
       color: $color-card-hover;
@@ -79,6 +80,10 @@ $transition: all 0.3s ease-in-out;
     }
   }
 
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
@@ -87,6 +92,7 @@ $transition: all 0.3s ease-in-out;
     width: 100%;
 
     .card {
+      margin-top: 2rem;
       width: 85%;
     }
   }

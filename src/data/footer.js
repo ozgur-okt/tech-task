@@ -1,6 +1,6 @@
-import facebook from "../assets/icons/icon-facebook.svg";
-import twitter from "../assets/icons/icon-twitter.svg";
-import instagram from "../assets/icons/icon-instagram.svg";
+import facebook from "../assets/icons/icon-facebook.svg"
+import twitter from "../assets/icons/icon-twitter.svg"
+import instagram from "../assets/icons/icon-instagram.svg"
 
 export const footer = {
   section: "FOOTER",
@@ -45,6 +45,6 @@ export const footer = {
     {
       alt: "Instagram",
       icon: instagram,
-    }
-  ]
+    },
+  ],
 }

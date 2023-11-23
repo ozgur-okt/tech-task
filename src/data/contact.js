@@ -15,5 +15,5 @@ export const contact = {
             type: "textarea"
         },
     },
-    buttonText : "Send Message"
+    buttonText : "Send Message",
 }

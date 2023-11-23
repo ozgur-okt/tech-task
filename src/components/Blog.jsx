@@ -1,15 +1,14 @@
 import { blog } from '../data/blog'
-import styles from '../styles/Blog.module.scss'
 import { ReactComponent as ArrowIcon } from '../assets/icons/icon-red-right-arrow.svg'
+import styles from '../styles/Blog.module.scss'
 
 function Blog() {
-
   return (
     <div className={styles.blogContainer}>
       <h5>{blog.section}</h5>
       <div className={styles.header}>
         <h1>{blog.title}</h1>
-        <div>
+        <div className={styles.arrows}>
           <img src={blog.icons.leftArrow} alt={blog.icons.alt} />
           <img src={blog.icons.rightArrow} alt={blog.icons.alt} />
         </div>

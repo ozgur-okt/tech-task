@@ -1,11 +1,12 @@
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-import About from './components/About';
-import Blog from './components/Blog';
-import Contact from './components/Contact';
-import Home from './components/Home';
-import Portfolio from './components/Portfolio';
-import Services from './components/Services';
+
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import Services from './components/Services'
+import About from './components/About'
+import Portfolio from './components/Portfolio'
+import Blog from './components/Blog'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <Contact />
       <Footer />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

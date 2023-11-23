@@ -17,6 +17,6 @@ export const services = {
       alt: "Web",
       title: "Web & App Development",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ea amet adipisci quidem esse dicta aperiam molestiae reprehenderit corporis repellendus!"
-    }
-  ]
+    },
+  ],
 }

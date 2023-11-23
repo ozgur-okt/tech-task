@@ -1,5 +1,5 @@
-import rightArrow from "../assets/icons/icon-right-arrow.svg";
-import leftArrow from "../assets/icons/icon-left-arrow.svg";
+import rightArrow from "../assets/icons/icon-right-arrow.svg"
+import leftArrow from "../assets/icons/icon-left-arrow.svg"
 
 export const blog = {
     section: "BLOG STORIES",
@@ -39,6 +39,6 @@ export const blog = {
             title: "New Adventure 6",
             date: "17 March 2019",
             description: "Lorem ipsum dolor sit, amet consec tetur adipisicing elit. Expedita et, aperiam est iusto cupiditate esse!"
-        }
-    ]
+        },
+    ],
 }

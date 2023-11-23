@@ -1,4 +1,4 @@
-import digitalization from "../assets/digitalization.svg";
+import digitalization from "../assets/digitalization.svg"
 
 export const home = {
     section: "HOME",

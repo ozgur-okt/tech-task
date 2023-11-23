@@ -5,7 +5,7 @@ $color-p: gray;
 $color-button: white;
 $color-a: #464E90;
 $background-color-button: #FF3946;
-$background-color-hover: #5d2ae5;
+$background-color-hover: #464E90;
 $font-size-h1: 2rem;
 $font-size-p: 1rem;
 $font-size-button: 1rem;
@@ -39,7 +39,7 @@ $transition: all 0.3s ease-in-out;
     p {
       font-size: $font-size-p;
       font-weight: $font-weight-p;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       color: $color-p;
     }
 
@@ -66,6 +66,10 @@ $transition: all 0.3s ease-in-out;
       font-size: $font-size-a;
       font-weight: $font-weight-a;
       color: $color-a;
+
+      &:hover {
+        color: $background-color-button;
+      }
     }
   }
 

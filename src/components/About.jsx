@@ -2,7 +2,6 @@ import { about } from '../data/about'
 import styles from '../styles/About.module.scss'
 
 function About() {
-
   return (
     <div className={styles.aboutContainer}>
       <div className={styles.image}>
